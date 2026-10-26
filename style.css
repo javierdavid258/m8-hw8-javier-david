@@ -133,53 +133,51 @@ footer {
 }
 
 @media (max-width: 500px) {
+  /* 1. Stack and center the header links */
   header {
-    padding: 24px 0 18px;
+    padding: 12px 0;
   }
 
   nav {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   nav > a:not(:first-of-type) {
     margin-left: 0;
-    margin-top: 8px;
   }
 
   nav > a.logo {
     margin-right: 0;
-    margin-bottom: 8px;
-  }
-
-  header a {
+    margin-bottom: 12px;
     font-size: 1.2rem;
   }
 
-  main > section,
-  main > article {
-    margin-bottom: 40px;
+  header a {
+    font-size: 1.3rem;
   }
 
+  /* 2. Shrink the article padding so text has room */
   main article {
-    padding: 24px 24px 12px;
+    padding: 12px 6px;
   }
 
+  /* 3. Smaller hero text */
   section.hero > .call-to-action {
-    font-size: 1.4rem;
-    padding: 0 20px;
+    font-size: 1.2rem;
+    padding: 0 24px;
   }
 
+  /* 4. Center the article image */
   main > article img {
     float: none;
     display: block;
-    width: 100%;
     max-width: 100%;
-    margin: 0 auto 20px;
+    margin: 0 auto 24px;
   }
 
-  main p {
+  /* 5. Smaller bottom margin between sections */
+  main > section, main > article {
     margin-bottom: 24px;
   }
 }
